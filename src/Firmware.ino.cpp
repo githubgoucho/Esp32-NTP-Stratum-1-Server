@@ -15,50 +15,10 @@
  *  License used: GPLv3
  *
  *
- * Librarys requierd:
- *
- *  U8G2 by oliver
- *  Time by Michael Magolis
- *  TinyGPS++ ( https://github.com/mikalhart/TinyGPSPlus )
- *  RTCLib by Adafruit
- *  ArduinoJson 6.10.0
- *  CRC32 by Christopher Baker
- *
  *  start ATL Developement 08/07/2023
  *
  *  Version 2.0
  *
- *
- *  Version 1.6
- *  - Fixed NULL pointer used for a function call
- *  - Moved project to Platform.IO
- *  - Dependencies handeled by PlatformIO
- *  - ESP32-C3 preperation started
- *
- *  Version 1.5
- *  - improved accuacy
- *  - addes sub seconds patch by W2UA
- *  - fixed missing return in ntp_server.cpp
- *  - fixed implicied conversation in Firmware.ino
- *
- *  Version 1.4
- *   - Added fix for gps modules that suffer from the week roolover
- *     this can now be corrected from the webinterface
- *   - Dependency of external Ticker library removed from requiered librarys
- *     The library is now paert of the ESP32 Arduino framwork
- *   - Code is prepare for GPS Baudratesettings
- *
- *  Version 1.3
- *   Added Telnetserver to access raw gpsmodule datastream on port 23
- *
- *
- *  Version 1.2
- *  - Fixed a bug making the NTP server now usable with linusx and windows systems
- *    This patch is kindly provided by Karl-Heinz Lohner for Version 1.0 and has been
- *    ported to Version 1.1
- *
- *  Version 1.1
- *  - Added static ip config
  *
  */
 //
