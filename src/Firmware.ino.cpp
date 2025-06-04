@@ -330,28 +330,13 @@ void setup()
   /* This is for the flash file system to access the webcontent */
   SPIFFS.begin();
 
-  /* We setup the xSemaphore to sync the screen update */
-  //xSemaphore = xSemaphoreCreateBinary();
-  /* We setup the i2c semaphore to sync i2c access */
-  // xi2cmtx = xSemaphoreCreateBinary();
-  /* Make access to the i2c possible */
-  // xSemaphoreGive(xi2cmtx);
-
   /* We read the Config from flash */
   Serial.println(F("Read Timecore Config"));
   timecoreconf_t cfg = read_timecoreconf();
 
   timec.SetConfig(cfg);
-  /* This creates a new task bound to the APP CPU
-  xTaskCreatePinnedToCore(
-      Display_Task,
-      "Display_Task",
-      10000,
-      NULL,
-      1,
-      NULL,
-      1);
-      */
+
+    
   /*
    * This delay the boot for a few seconds and will erase all config
    * if the boot btn is pressed
