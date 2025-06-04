@@ -497,7 +497,7 @@ bool connectWiFi()
 
 /**************************************************************************************************
  *    Function      : configureSoftAP
- *    Description   : Configures the ESP as SoftAP
+ *    Description   : Configures the ESP as SoftAP at IP:  192, 168, 4, 1
  *    Input         : none
  *    Output        : none
  *    Remarks       : configure the access point of the esp
